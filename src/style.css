@@ -288,14 +288,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
   transition: var(--transition);
+}
+
+.hero-social a i {
+  font-size: 1.5rem;
+  color: var(--accent);
 }
 
 .hero-social a:hover {
   background-color: var(--accent);
-  color: var(--bg-primary);
   transform: translateY(-5px);
+}
+
+.hero-social a:hover i {
+  color: var(--bg-primary);
 }
 
 .hero-scroll {
@@ -700,20 +707,24 @@ img {
 }
 
 .contact-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--spacing-md);
   margin-top: var(--spacing-lg);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-card {
   background-color: rgba(20, 45, 76, 0.5);
-  padding: var(--spacing-lg);
-  border-radius: 10px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 8px;
   border: 2px solid rgba(159, 211, 199, 0.2);
   transition: var(--transition);
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
   gap: var(--spacing-sm);
   color: var(--text-primary);
@@ -723,17 +734,19 @@ img {
   border-color: var(--accent);
   background-color: var(--accent);
   color: var(--bg-primary);
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(159, 211, 199, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(159, 211, 199, 0.3);
 }
 
 .contact-card i {
-  font-size: 2.5rem;
+  font-size: 1.25rem;
+  min-width: 20px;
 }
 
 .contact-card span {
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 /* ============================================
@@ -919,6 +932,11 @@ img {
   .job-title,
   .education-degree {
     font-size: 1.25rem;
+  }
+  
+  .contact-card {
+    width: 100%;
+    justify-content: center;
   }
 }
 

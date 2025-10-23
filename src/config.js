@@ -13,19 +13,19 @@ const portfolioData = {
     tagline: "Building intelligent systems with LLMs, RAG, and fine-tuning",
     
     // photo
-    photo: "/image/main.png",
+    photo: "./image/main.png",
     
     // summary 
     summary: "I'm an AI Engineer passionate about building intelligent systems that solve real-world problems. My journey into AI wasn't straightforward - I started with a background in IT Engineering and network administration, where I discovered my love for problem-solving and technology. After working in administration and product management, I realized I wanted to create the technical solutions myself, not just manage them. That led me to pursue a Master's in Data Science in Berlin, where I fell in love with machine learning and AI.\n\nToday, I specialize in Large Language Models, RAG systems, and fine-tuning techniques. I'm fascinated by how we can make AI systems more intelligent, efficient, and practical for real applications. Whether it's reducing compute costs through smart fine-tuning or building multi-agent systems that can reason and act autonomously, I love pushing the boundaries of what's possible with AI.\n\nWhat drives me is continuous learning and solving complex technical challenges. My expertise has evolved from foundational web development to architecting production AI systems. I specialize in fine-tuning open-source models like LLaMA, Qwen, Gemma, and Mixtral using LoRA and QLoRA techniques, while integrating frontier models like GPT and Claude for production applications. I'm deeply interested in the engineering behind these systems: optimizing inference, implementing efficient RAG pipelines, and building robust AI architectures. I believe the best solutions come from understanding both the technical depth and the real-world impact of what we build.",
     
-    email: "maryam@mohebi.me",
+    email: "dev[at]mohebi.me",
     location: "Berlin, Germany",
     github: "github.com/maryam-mohebbi",
     linkedin: "linkedin.com/in/maryam-mohebi/",
     
     // Social Links
     socialLinks: {
-      email: "mailto:maryam@mohebi.me",
+      email: "mailto:dev@mohebi.me",
       linkedin: "https://www.linkedin.com/in/maryam-mohebi/",
       github: "https://github.com/maryam-mohebbi"
     }
@@ -71,7 +71,7 @@ const portfolioData = {
       ]
     },
     {
-      title: "Junior React Developer",
+      title: "React Developer",
       company: "Freelancer",
       location: "Remote",
       period: "Oct 2021 - Oct 2023",
@@ -182,10 +182,10 @@ const portfolioData = {
       "Statistical Modeling",
       "Mathematical Modeling",
       "Causal Inference",
-      "Fairness & Explainability (SHAP)",
+      "Fairness & Explainability",
       "Deep Learning",
       "Neural Networks",
-      "Hyperparameter Optimization (Optuna)",
+      "Hyperparameter Optimization",
       "Multi-Objective Optimization",
       "A/B Testing",
       "Recommendation Systems",
