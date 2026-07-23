@@ -16,7 +16,15 @@ const portfolioData = {
     photo: "./image/main.png",
     
     // summary 
-    summary: "I'm an AI Engineer passionate about building intelligent systems that solve real-world problems. My journey into AI wasn't straightforward - I started with a background in IT Engineering and network administration, where I discovered my love for problem-solving and technology. After working in administration and product management, I realized I wanted to create the technical solutions myself, not just manage them. That led me to pursue a Master's in Data Science in Berlin, where I fell in love with machine learning and AI.\n\nToday, I specialize in Large Language Models, RAG systems, and fine-tuning techniques. I'm fascinated by how we can make AI systems more intelligent, efficient, and practical for real applications. Whether it's reducing compute costs through smart fine-tuning or building multi-agent systems that can reason and act autonomously, I love pushing the boundaries of what's possible with AI.\n\nWhat drives me is continuous learning and solving complex technical challenges. My expertise has evolved from foundational web development to architecting production AI systems. I specialize in fine-tuning open-source models like LLaMA, Qwen, Gemma, and Mixtral using LoRA and QLoRA techniques, while integrating frontier models like GPT and Claude for production applications. I'm deeply interested in the engineering behind these systems: optimizing inference, implementing efficient RAG pipelines, and building robust AI architectures. I believe the best solutions come from understanding both the technical depth and the real-world impact of what we build.",
+    summary: [
+      "I'm an AI Engineer passionate about building intelligent systems that solve real-world problems. My journey into AI wasn't straightforward - I started with a background in IT Engineering and network administration, where I discovered my love for problem-solving and technology. After working in administration and product management, I realized I wanted to create the technical solutions myself, not just manage them. That led me to pursue a Master's in Data Science in Berlin, where I fell in love with machine learning and AI.",
+
+      "Right now, most of my energy goes into VoyaLang (voyalang.com), an AI-powered IELTS writing tutor I founded and built end to end. It gives learners per-criterion band scores, line-by-line corrections, and target-band rewrites in about 30 seconds, and it's live with real users. Building it solo, from the LLM assessment pipelines to the backend, the two frontends, and the deployment, has been the clearest test yet of what I care about: turning research-grade AI into a reliable product people actually depend on.",
+
+      "Today, I specialize in Large Language Models, RAG systems, and fine-tuning techniques. I'm fascinated by how we can make AI systems more intelligent, efficient, and practical for real applications. Whether it's reducing compute costs through smart fine-tuning or building multi-agent systems that can reason and act autonomously, I love pushing the boundaries of what's possible with AI.",
+
+      "What drives me is continuous learning and solving complex technical challenges. My expertise has evolved from foundational web development to architecting production AI systems. I specialize in fine-tuning open-source models like LLaMA, Qwen, Gemma, and Mixtral using LoRA and QLoRA techniques, while integrating frontier models like GPT and Claude for production applications. I'm deeply interested in the engineering behind these systems: optimizing inference, implementing efficient RAG pipelines, and building robust AI architectures. I believe the best solutions come from understanding both the technical depth and the real-world impact of what we build."
+    ].join("\n\n"),
     
     email: "dev[at]mohebi.me",
     location: "Berlin, Germany",
@@ -35,12 +43,30 @@ const portfolioData = {
   // WORK EXPERIENCE
   // ============================================
   workExperience: [
+      {
+      title: "Founder & AI Engineer",
+      company: "VoyaLang",
+      location: "Berlin, Germany",
+      period: "Mar 2026 - Present",
+      current: true,
+      achievements: [
+        "Founded and built VoyaLang (voyalang.com), a live AI-powered IELTS writing tutor that delivers per-criterion band scores, line-by-line error correction, and target-band rewrites in about 30 seconds, with real users",
+        "Built task-specific and chart-type-specific LLM pipelines calibrated to the official IELTS band descriptors, validated against 50 human-graded essays across 5 frontier models to within 0.5 band of the examiner reference",
+        "Developed chart-aware Task 1 assessment across all 7 visual types (line graphs, bar charts, pie charts, tables, maps, process diagrams, and mixed) over a library of 1,400+ practice topics",
+        "Engineered the full production stack solo: async FastAPI + PostgreSQL backend with 222 REST endpoints, two Next.js frontends, Dockerized deployment, and a Caddy reverse proxy with automatic TLS across staging and production",
+        "Implemented a GDPR-compliant data layer with consent management, self-service account deletion, automated data-retention sweeps, and audit logging",
+        "Built operational tooling: an admin console with per-request LLM cost tracking, capture-based LLM debugging, runtime configuration without redeploys, and Sentry monitoring across all deployables",
+        "Built a custom blog CMS with a block-based article builder, scheduled publishing, no-redeploy public rendering, and LLM-generated social renditions for Instagram, Telegram, and LinkedIn",
+        "Integrated consent-gated product analytics end to end (GA4 with server-side Measurement Protocol) plus automated lifecycle email sequences, referrals, and Google sign-in",
+        "Established CI quality gates with 4,000+ backend tests, database-migration CI, Lighthouse CI, frontend test suites, and Maestro end-to-end UI flows, all wired into GitHub Actions"
+      ]
+    },
     {
       title: "AI Engineer & LLM Specialist",
       company: "Independent AI Development & Consulting",
       location: "Berlin, Germany",
-      period: "Mar 2025 - Present",
-      current: true,
+      period: "Mar 2025 - Mar 2026",
+      current: false,
       achievements: [
         "Designed and deployed production-grade AI applications using frontier and open-source models",
         "Built retrieval-augmented generation (RAG) pipelines using FAISS and vector DBs, enabling domain-specific Q&A",
@@ -216,7 +242,10 @@ const portfolioData = {
       "Docker",
       "Kubernetes",
       "Cloud Platforms",
-      "CI/CD"
+      "Caddy",
+      "CI/CD",
+      "GitHub Actions",
+      "Sentry"
     ],
     "Soft Skills": [
       "Communication",
